@@ -2,10 +2,17 @@
 <html ng-app="store">
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css"/>
-	</head>
-	<body>
 		<script type="javascript" src="scripts/angular.min.js"></script>
 		<script type="javascript" src="scripts/app.js"></script>
-		<script></script>
+	</head>
+	<body ng-controller="StoreController as store">
+
+		<div ng-hide="store.product.soldOut">
+			<h1> {{store.product.name}} </h1>
+			<h2> ${{store.product.price}} </h2>
+			<p> {{store.product.description}} </p>
+			<button ng-show="store.product.canPurchase">Add to Cart</button>
+		</div>
+
 	</body>
 </html>
