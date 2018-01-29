@@ -7,12 +7,14 @@
 	</head>
 	<body ng-controller="StoreController as store">
 
-		<div ng-repeat="product in store.products" ng-hide="product.soldOut">
-			<h1> {{product.name}} </h1>
-			<h2> ${{product.price}} </h2>
-			<p> {{product.description}} </p>
-			<button ng-show="store.product.canPurchase">Add to Cart</button>
-		</div>
+		<ul class="list-group">
+			<li classe="list-group-item" ng-repeat="product in store.products" ng-hide="product.soldOut">
+				<h3>
+					{{product.name}}
+					<em class="pull-right">${{product.price}}</em>
+				</h3>
+			</li>
+		</ul>
 
 	</body>
 </html>
