@@ -1,10 +1,32 @@
 (function() {
+	// app defines the business logic of our web store
 	var app = angular.module('store', [ ]);
 
+	// a controller defines a set of (specialized) operations
 	app.controller('StoreController', function() {
+    // products = property of the StoreController
 		this.products = gems;
 	});
 
+	// a controller defines a set of (specialized) operations
+	app.controller('PanelController', function() {
+		// tab = property of the PanelController
+		// initialize active tab by default
+		this.tab = 1;
+
+		// select tab
+		this.selectTab = function(setTab) {
+			this.tab = setTab;
+		};
+
+    // check if this tab is selected
+		this.isSelected = function(checkTab) {
+			return this.tab === checkTab;
+		}
+
+	});
+
+	// gems defines our web store data
 	var gems = [
 		{
 			name: 'Dodecahedron',
