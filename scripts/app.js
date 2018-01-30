@@ -3,7 +3,7 @@
 	var app = angular.module('store', [ 'store-products' ]);
 
 	// a controller defines a set of (specialized) operations
-	app.controller('StoreController', ['http', function($http) {
+	app.controller('StoreController', ['$http', function($http) {
   	// using service injection
 		var store = this;
 
