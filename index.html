@@ -10,9 +10,8 @@
 		<ul class="list-group">
 			<li classe="list-group-item" ng-repeat="product in store.products" ng-hide="product.soldOut">
 				<h3>
-					{{product.name}}
-					<em class="pull-right">{{product.price | currency}}</em>
-					<img ng-src="{{product.images[0].full}}"/>
+					<!-- include our custom directive -->
+					<product-title></product-title>
 				</h3>
 			</li>
 		</ul>

@@ -36,6 +36,15 @@
 		};
 	});
 
+	// custom directive: the camelCase notation will translate into a HTML dash
+	app.directive('productTitle', function() {
+		return {
+			// E is for element, and is the type of the directive
+			restrict: 'E',
+			templateUrl: 'product-title.html'
+		};
+	});
+
 	// gems defines our web store data
 	var gems = [
 		{
