@@ -61,7 +61,7 @@
 					return this.tab === checkTab;
 				}
 			},
-			controllerAs: 'panel'
+			controllerAs: 'panels'
 		};
 	});
 
