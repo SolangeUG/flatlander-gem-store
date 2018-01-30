@@ -1,0 +1,9 @@
+.ng-invalid.ng-dirty {
+	/* red border color that signifies an invalid field */
+	border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+	/* green border color that signifies an invalid field */
+	border-color: #78FA89;
+}
