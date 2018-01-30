@@ -51,6 +51,18 @@
 					full: 'images/dodecahedron-128.jpg',
 					thumb: 'images/dodecahedron-thumb.jpg'
 				},
+			],
+			reviews: [
+				{
+					stars: 5,
+					body: 'I love this product',
+					author: 'joe@thomas.com'
+				},
+				{
+					stars: 1,
+					body: 'This product sucks',
+					author: 'tim@hater.com'
+				}
 			]
 		},
 		{
@@ -76,6 +88,18 @@
 					full: 'images/pentagon-128.jpg',
 					thumb: 'images/pentagons-thumb.jpg'
 				},
+			],
+			reviews: [
+				{
+					stars: 5,
+					body: 'I totally love this!',
+					author: 'helen@love.com'
+				},
+				{
+					stars: 4,
+					body: 'Not bad at all',
+					author: 'john@doe.com'
+				}
 			]
 		}
 	];
