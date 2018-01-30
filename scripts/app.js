@@ -26,6 +26,16 @@
 
 	});
 
+	// a controller for our review functionality
+	app.controller('ReviewController', function() {
+		this.review = {};
+
+		this.addReview = function(product) {
+			product.reviews.push(this.review);
+			this.review = {};
+		};
+	});
+
 	// gems defines our web store data
 	var gems = [
 		{
