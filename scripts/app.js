@@ -1,30 +1,12 @@
 (function() {
 	// app defines the business logic of our web store
-	var app = angular.module('store', [ ]);
+	var app = angular.module('store', [ 'store-products' ]);
 
 	// a controller defines a set of (specialized) operations
 	app.controller('StoreController', function() {
     // products = property of the StoreController
 		this.products = gems;
 	});
-
-	// a controller defines a set of (specialized) operations
-	// app.controller('PanelController', function() {
-	// 	// tab = property of the PanelController
-	// 	// initialize active tab by default
-	// 	this.tab = 1;
-  //
-	// 	// select tab
-	// 	this.selectTab = function(setTab) {
-	// 		this.tab = setTab;
-	// 	};
-  //
-  //   // check if this tab is selected
-	// 	this.isSelected = function(checkTab) {
-	// 		return this.tab === checkTab;
-	// 	}
-  //
-	// });
 
 	// a controller for our review functionality
 	app.controller('ReviewController', function() {
@@ -33,35 +15,6 @@
 		this.addReview = function(product) {
 			product.reviews.push(this.review);
 			this.review = {};
-		};
-	});
-
-	// custom directive: the camelCase notation will translate into a HTML dash
-	app.directive('productTitle', function() {
-		return {
-			// E is for element, and is the type of the directive
-			restrict: 'E',
-			templateUrl: 'product-title.html'
-		};
-	});
-
-  // custom directive with a controller
-	app.directive('productPanels', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'product-panels.html',
-			controller: function () {
-				this.tab = 1;
-				// select tab
-				this.selectTab = function(setTab) {
-					this.tab = setTab;
-				};
-		    // check if this tab is selected
-				this.isSelected = function(checkTab) {
-					return this.tab === checkTab;
-				}
-			},
-			controllerAs: 'panels'
 		};
 	});
 
