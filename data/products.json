@@ -1,77 +1,92 @@
-/* our web store products */
 [
 	{
-		"name": "Dodecahedron",
-		"price": 2.95,
-		"description": "A polyhedron with twelve flat faces.",
-		"canPurchase": true,
-		"soldOut": false,
-		"images": [
+    "name": "Azurite",
+    "description": "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    "shine": 8,
+    "price": 110.50,
+    "rarity": 7,
+    "color": "#CCC",
+    "faces": 14,
+    "images": [
+      "../images/gem-02.gif",
+      "../images/gem-05.gif",
+      "../images/gem-09.gif"
+    ],
+    "reviews": [
 			{
-				"full": "../images/dodecahedron-24.jpg",
-				"thumb": "../images/dodecahedron-thumb.jpg"
-			},
+	      "stars": 5,
+	      "body": "I love this gem!",
+	      "author": "joe@thomas.com",
+	      "createdOn": 1397490980837
+	    },
 			{
-				"full": "../images/dodecahedron-32.jpg",
-				"thumb": "../images/dodecahedron-thumb.jpg"
-			},
-			{
-				"full": "../images/dodecahedron-64.jpg",
-				"thumb": "../images/dodecahedron-thumb.jpg"
-			},
-			{
-				"full": "../images/dodecahedron-128.jpg",
-				"thumb": "../images/dodecahedron-thumb.jpg"
-			},
-		],
-		"reviews": [
-			{
-				"stars": 5,
-				"body": "I love this product",
-				"author": "joe@thomas.com"
-			},
-			{
-				"stars": 1,
-				"body": "This product sucks",
-				"author": "tim@hater.com"
-			}
+	      "stars": 1,
+	      "body": "This gem sucks.",
+	      "author": "tim@hater.com",
+	      "createdOn": 1397490980837
+	    }
 		]
-	},
+  },
 	{
-		"name": "Pentagonal Gem",
-		"price": 5.95,
-		"description": "A polyhedron with five flat faces.",
-		"canPurchase": false,
-		"soldOut": false,
-		"images": [
+    "name": "Bloodstone",
+    "description": "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
+    "shine": 9,
+    "price": 22.90,
+    "rarity": 6,
+    "color": "#EEE",
+    "faces": 12,
+    "images": [
+      "../images/gem-01.gif",
+      "../images/gem-03.gif",
+      "../images/gem-04.gif",
+    ],
+    "reviews": [
 			{
-				"full": "../images/pentagon-24.jpg",
-				"thumb": "../images/pentagon-thumb.jpg"
-			},
+	      "stars": 3,
+	      "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+	      "author": "JimmyDean@sausage.com",
+	      "createdOn": 1397490980837
+	    },
 			{
-				"full": "../images/pentagon-32.jpg",
-				"thumb": "../images/pentagon-thumb.jpg"
-			},
-			{
-				"full": "../images/pentagon-64.jpg",
-				"thumb": "../images/pentagon-thumb.jpg"
-			},
-			{
-				"full": "../images/pentagon-128.jpg",
-				"thumb": "../images/pentagons-thumb.jpg"
-			},
-		],
-		"reviews": [
-			{
-				"stars": 5,
-				"body": "I totally love this!",
-				"author": "helen@love.com"
-			},
-			{
-				"stars": 4,
-				"body": "Not bad at all",
-				"author": "john@doe.com"
-			}
+	      "stars": 4,
+	      "body": "Any gem with 12 faces is for me!",
+	      "author": "gemsRock@alyssaNicoll.com",
+	     " createdOn": 1397490980837
+	    }
 		]
-	}
+  },
+	{
+    "name": "Zircon",
+    "description": "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+    "shine": 70,
+    "price": 1100,
+    "rarity": 2,
+    "color": "#000",
+    "faces": 6,
+    "images": [
+      "../images/gem-06.gif",
+      "../images/gem-07.gif",
+      "../images/gem-10.gif"
+    ],
+    "reviews": [
+			{
+	      "stars": 1,
+	      "body": "This gem is WAY too expensive for its rarity value.",
+	      "author": "turtleguyy@zdn.me",
+	      "createdOn": 1397490980837
+	    },
+			{
+	      "stars": 1,
+	      "body": "BBW: High Shine != High Quality.",
+	      "author": "LouisW407@gmail.com",
+	      "createdOn": 1397490980837
+	    },
+			{
+	      "stars": 1,
+	      "body": "Don't waste your rubles!",
+	      "author": "nat@flatland.com",
+	      "createdOn": 1397490980837
+	    }
+		]
+  }
 ]
