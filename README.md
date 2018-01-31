@@ -15,12 +15,13 @@ An example of a simple AngularJS application to showcase [Flatlander's Gem Store
 
 - [AngularJS](https://angularjs.org/)
 - [Bootstrap](http://getbootstrap.com/docs/4.0/getting-started/download/)
+- [node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/get-npm)
 - Any code/text editor ([atom](https://atom.io/) for example)
 
-## Requirements
+## Setup
 
-- [AngularJS](https://angularjs.org/) - any version, but the latest is always the best idea.
-- [Bootstrap](http://getbootstrap.com/docs/4.0/getting-started/download/) - the latest release and recommended version.
+Some features require a server to be running. If you have `node` and `npm` installed, you can run `npm install http-server -g`. Then run the `http-server` command inside the application folder and you should be able to see the application running at `http://127.0.0.1:8080/`.
 
 
 ## Resources
