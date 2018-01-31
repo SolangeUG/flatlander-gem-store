@@ -4,17 +4,15 @@
 [![JavaScript Platform](https://img.shields.io/badge/platform-JavaScript-F4D03F.svg)](https://www.javascript.com/)
 [![AngularJS Framework](https://img.shields.io/badge/framework-AngularJS-DD0031.svg)](https://angular.io/)
 [![Bootstrap Library](https://img.shields.io/badge/library-Bootstrap-8E44AD.svg)](http://getbootstrap.com/)
-
-
+[![jQuery Library](https://img.shields.io/badge/library-jQuery-3498DB.svg)](https://jquery.com/)
 
 An example of a simple AngularJS application to showcase [Flatlander's Gem Store](http://campus.codeschool.com/courses/shaping-up-with-angularjs).
-
-
 
 ## Languages - Libraries - Tools
 
 - [AngularJS](https://angularjs.org/)
 - [Bootstrap](http://getbootstrap.com/docs/4.0/getting-started/download/)
+- [jQuery](https://jquery.com/)
 - [node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/get-npm)
 - Any code/text editor ([atom](https://atom.io/) for example)
@@ -23,12 +21,9 @@ An example of a simple AngularJS application to showcase [Flatlander's Gem Store
 
 Some features require a server to be running. If you have `node` and `npm` installed, you can run `npm install http-server -g`. Then run the `http-server` command inside the application folder and you should be able to see the application running at `http://127.0.0.1:8080/`.
 
-
 ## Resources
 
 - [Shaping up with AngularJS](http://campus.codeschool.com/courses/shaping-up-with-angularjs)
-
-
 
 ## License
 
