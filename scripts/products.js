@@ -1,33 +1,57 @@
-(function() {
-	var app = angular.module('store-products', [ ]);
-	
-	// custom directive: the camelCase notation will translate into a HTML dash
-	app.directive('productTitle', function() {
-		return {
-			// E is for element, and is the type of the directive
-			restrict: 'E',
-			templateUrl: 'product-title.html'
-		};
-	});
+(function(){
+    var app = angular.module('store-directives', []);
 
-  // custom directive with a controller
-	app.directive('productPanels', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'product-panels.html',
-			controller: function () {
-				this.tab = 1;
-				// select tab
-				this.selectTab = function(setTab) {
-					this.tab = setTab;
-				};
-		    // check if this tab is selected
-				this.isSelected = function(checkTab) {
-					return this.tab === checkTab;
-				}
-			},
-			controllerAs: 'panels'
-		};
-	});
+    app.directive("productDescription", function() {
+      return {
+        restrict: 'E',
+        templateUrl: "../product-description.html"
+      };
+    });
 
-})();
+    app.directive("productReviews", function() {
+      return {
+        restrict: 'E',
+        templateUrl: "../product-reviews.html"
+      };
+    });
+
+    app.directive("productSpecs", function() {
+      return {
+        restrict:"A",
+        templateUrl: "../product-specs.html"
+      };
+    });
+
+    app.directive("productTabs", function() {
+      return {
+        restrict: "E",
+        templateUrl: "../product-tabs.html",
+        controller: function() {
+          this.tab = 1;
+
+          this.isSet = function(checkTab) {
+            return this.tab === checkTab;
+          };
+
+          this.setTab = function(activeTab) {
+            this.tab = activeTab;
+          };
+        },
+        controllerAs: "tab"
+      };
+    });
+
+    app.directive("productGallery", function() {
+      return {
+        restrict: "E",
+        templateUrl: "../product-gallery.html",
+        controller: function() {
+          this.imageIndex = 0;
+          this.setCurrent = function(imageNumber) {
+            this.imageIndex = imageNumber || 0;
+          };
+        },
+        controllerAs: "gallery"
+      };
+    });
+  })();
