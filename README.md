@@ -1,6 +1,6 @@
 # A simple AngularJS store application
 
-[![MIT License](https://img.shields.io/badge/license-MIT%20License-green.svg)](https://github.com/SolangeUG/restful-microservices/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT%20License-green.svg)](https://github.com/SolangeUG/flatlander-gem-store/blob/master/LICENSE)
 [![JavaScript Platform](https://img.shields.io/badge/platform-JavaScript-F4D03F.svg)](https://www.javascript.com/)
 [![AngularJS Framework](https://img.shields.io/badge/framework-AngularJS-DD0031.svg)](https://angular.io/)
 [![Bootstrap Library](https://img.shields.io/badge/library-Bootstrap-8E44AD.svg)](http://getbootstrap.com/)
